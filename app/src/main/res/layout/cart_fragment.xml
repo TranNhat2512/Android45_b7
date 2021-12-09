@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:id="@+id/idNameCart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Shopping cart"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvYourFood"
+            android:layout_below="@+id/idNameCart"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:text="Your Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvYourFood"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</layout>
